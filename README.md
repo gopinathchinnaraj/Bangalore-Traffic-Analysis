@@ -1,55 +1,73 @@
-# 🚌 IoT-Based BMTC Bus Tracking System
+# 🚦Bangalore Traffic Analysis 
+A data-driven traffic analysis project focusing on congestion patterns in Bangalore. Analyzes traffic data to identify hotspots, peak hours, and suggests possible optimization using visualizations and statistical insights.
+## 📌 Project Overview
 
-A real-time IoT-enabled bus tracking solution designed to monitor Bangalore Metropolitan Transport Corporation (BMTC) buses. The system uses GPS + GSM modules integrated with Arduino to send live bus coordinates to an online Excel/Google Sheet Script, which then updates and displays the live bus route on a map interface.
+This project performs:
 
-Passengers can view the bus location in real time, improving commuter convenience and reducing waiting time uncertainty.
+✅ Data cleaning & preprocessing  
+✅ Exploratory Data Analysis (EDA)  
+✅ Peak congestion time identification  
+✅ Traffic hotspot detection  
+✅ Visualizations & statistical insights  
+✅ Suggestions to optimize traffic conditions  
 
-## 📌 Project Features
+---
 
-✅ Real-time bus location tracking  
-✅ Arduino-based GPS + GSM data transmission  
-✅ Live updates to Google Sheet/Excel Script  
-✅ Public tracking map for passengers  
-✅ Efficient & scalable for public transport fleets  
+## 🧠 Insights Extracted
+
+- **Most congested time periods** in Bangalore
+- **High-traffic zones / hotspots**
+- **Correlation** between time, vehicle volume & congestion
+- **Visual trend representation** of traffic behavior
+
+---
+
+## 📊 Visualizations
+### Traffic Trends Over Time
+![Traffic Trends](images/trend_line_over_time.png)
+*Single line graph showing temporal trend of traffic patterns throughout the day*
+
+### Traffic Hotspots
+![Traffic Hotspots](images/traffic_hotspots.png)
+### Variable Relationships
+![Variable Relationships](images/pairplot_variable_relationships.png)
+*Grid of scatter plots and histograms showing variable correlations and distributions*
+
+### Peak Congestion Times
+![Peak Times](images/peak_congestion.png)
+### Categorical Traffic Data
+![Categorical Analysis](images/categorical_bar_chart.png)
+*Bar chart representing categorical data across different traffic zones*
+
+### Time Series Fluctuations
+![Time Series](images/time_series_fluctuations.png)
+*Line graph showing data changes over time with peak and off-peak patterns*
+
+### Traffic Cluster Analysis
+![Cluster Analysis](images/scatter_plot_clusters.png)
+*Scatter plot with visible clusters or groupings of traffic hotspots*
+
+### High-Frequency Traffic Patterns
+![High Frequency Data](images/high_frequency_line_graph.png)
+*Dense line graph with many data points showing detailed traffic fluctuations*
+
+### Project Structure
+![File Listing](images/terminal_file_listing.png)
+*Overview of project directory structure and files*
+
+### Traffic Trends
+![Trends](images/traffic_trends.png)
+
+---
 
 ## 🛠️ Tech Stack
 
-| Component | Description |
-|-----------|-------------|
-| Arduino | Microcontroller unit |
-| GPS Module | Captures live bus coordinates |
-| GSM Module | Sends location via cellular network |
-| Open Maps API | Visual map display |
-| Excel / Google Script | Stores + updates live location |
+| Technology | Purpose |
+|------------|---------|
+| Python | Core programming |
+| Pandas | Data analysis |
+| Matplotlib | Data visualization |
+| Seaborn | Advanced visualizations |
+| NumPy | Numerical computations |
 
-## 🔧 Hardware Components
-
-- Arduino UNO / Nano
-- GPS Module (NEO-6M)
-- GSM Module (SIM800L / SIM900)
-- Breadboard & jumper wires
-- Power supply & SIM card
-
-## 📊 System Architecture
-
-![System Architecture](images/system-architecture.png)
-*Figure 3: System Architecture Diagram*
-
-## 🚀 Installation & Setup
-
-### Hardware Setup
-1. Connect GPS module to Arduino
-2. Connect GSM module to Arduino
-3. Assemble the circuit as per schematic
-4. Insert active SIM card into GSM module
-
-### Software Setup
-```arduino
-// Sample code snippet
-#include <SoftwareSerial.h>
-SoftwareSerial gps(10, 11); // RX, TX
-
-void setup() {
-  Serial.begin(9600);
-  gps.begin(9600);
-}
+---
