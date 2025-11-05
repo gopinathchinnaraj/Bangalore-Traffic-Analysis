@@ -32,7 +32,8 @@ Passengers can view the bus location in real time, improving commuter convenienc
 
 ## 📊 System Architecture
 
-[Add your system architecture diagram or description here]
+![System Architecture](images/system-architecture.png)
+*Figure 3: System Architecture Diagram*
 
 ## 🚀 Installation & Setup
 
